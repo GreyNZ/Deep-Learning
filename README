@@ -1,0 +1,46 @@
+README 
+
+Q1:
+
+model 0 was 0.591 
+model 1 was 0.61 
+My conv2D has floating point differences but the learn stuff said thats okay.
+model 3 was 0.73 in 4 mins 48 secs
+model 3b is 0.69 in 1 min 55 secs
+
+Q2:
+CNN will preform better as it is learning features rather than each pixels position in the image, this allows it to work when the 3 moves around in the image.
+A feed forward network would struggle as it would learn about the pixels locations and values in the image, so moving the number around inside the image will cause it to make bad predictions.
+
+Q3:
+I was not sure how to write the formula out as I could not make it to help sessions as they confilicted with lectures so by best attempts below. I also attached an image of the 
+simplest soloution I could make Q3.png. Can do single hidden layer with 3 neurons and relu with L1 reg
+
+output = relu(w1*x1 + w2*x2 + w3*x1*x2)
+
+I couldent find it in the notes so no idea 
+
+Q4:
+(a) What factors do the researchers claim contribute to “criminality?” (1-3 sentences)
+Well Cesare Lombroso said its having ape features so I am going to discount him as a nutbar as assume you mean the researchers Xiaolin Wu and Xi Zhang.
+The three features they found were a Curvature of upper lip is 23% larger for criminals, distance between inner corners of the eyes 6% smaller 
+and the angle between two lines drawn from the tip of the nose to the corners of the mouth, which is 20% smaller. 
+
+(b) What’s one potential confounding variable/feature that their algorithm learned? What’s your evaluation of the “effectiveness” of this algorithm? (2-4 sentences)
+"Confounding variable/feature"
+Its unexplained why crimnal faces have 4 subgroups and non-criminals only 3, no idea why this would be the case. 
+Also that criminal faces are more disimilar than non criminals, guess your unlucky if your look different as you might get bundled into criminals?
+
+"Your evaluation of the “effectiveness”"
+I would measure the algorims as vary effective as 89.5%  ability to classify ciminals and non criminals is  very impressive. Its better than people do in lineups trying to pick out criminals they have themselves seen.
+If its better than an average person at the task its pretty good. Still not good enough to make decisions with though.
+
+
+(c) If this algorithm were actually deployed, what are the consequences of this algorithm making a mistake (misclassification)? (1-3 sentences)
+Missclassification would have two distinct consequences one for a false positive and another for a flase negative. 
+1) A non criminal is classified as a criminal and could be charge for crimes they dont commit or in some other way have thier rights infringed like state sactioned monitoring for criminal behavior.
+2) A criminal might be missclassified as innocent which could cause them not to be punished or worse leave them free to re-offend again/more in the future.
+
+
+
+
